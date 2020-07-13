@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width:1440px;
+  height:800px;
+  margin: auto;
+  background-color: hsl(257, 40%, 49%);
+  background-image: URL("/Users/charitytemple/Downloads/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+  background-size: stretch;
+  background-repeat:no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  /*border: solid red;*/
+  width:90%;
+  margin:50px auto 30px auto;
+
+}
+
+header > img{
+  height: 70%;
+}
+
+main {
+  /*border:solid blue;*/
+  display: flex;
+  width: 90%;
+  margin:auto;
+}
+
+.main_imageholder{
+  /*border:solid yellow;*/
+  margin-right: 50px;
+  flex:1;
+}
+
+
+
+.textholder{
+  /*border: solid green;*/
+  flex:1;
+}
+
+h1{
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
+p{
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 2rem;
+}
+
+button{
+  margin-top:2rem;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 300;
+  width: 170px;
+  height: 40px;
+  color: hsl(257, 40%, 70%);
+  text-decoration: none;
+  background-color: white;
+  border: 0px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px hsl(257, 40%, 35%);
+}
+
+button:hover{
+  background-color: hsl(257, 40%, 40%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.social{
+  /*border: solid orange;*/
+  width: 90%;
+  margin: 0px auto auto auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social ul{
+  display:flex;
+}
+
+.social > ul > li{
+  list-style: none;
+  border: 1px white solid;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.social > ul > li > a{
+  font-size: 14px;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution > a {
+  color: hsl(228, 45%, 44%);
+}
