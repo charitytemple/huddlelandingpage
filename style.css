@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700;900&display=swap');
 
 *{
   margin: 0;
@@ -7,78 +6,87 @@
   box-sizing: border-box;
 }
 
-.container{
-  max-width:1440px;
-  height:800px;
-  margin: auto;
-  background-color: hsl(257, 40%, 49%);
-  background-image: URL("/Users/charitytemple/Downloads/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
-  background-size: stretch;
-  background-repeat:no-repeat;
+body{
+  background: hsl(257, 40%, 49%);
+  width: 100vw;
   color: white;
+  display: flex;
+  place-items:center;
+}
+
+.wrapper{
+  width:100%;
+  height: 100vh;
+  background: url('images/bg-mobile.svg') no-repeat;
+  background-size: contain;
+}
+
+.container{
+  margin: 50px;
   display: flex;
   flex-direction: column;
 }
 
 header{
-  /*border: solid red;*/
-  width:90%;
-  margin:50px auto 30px auto;
-
+  width: 100%;
+  height: 50px;
+  margin-bottom:80px;
 }
 
 header > img{
-  height: 70%;
+  height: 100%;
 }
 
-main {
-  /*border:solid blue;*/
+main{
   display: flex;
-  width: 90%;
-  margin:auto;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .main_imageholder{
-  /*border:solid yellow;*/
-  margin-right: 50px;
-  flex:1;
+  width: 100%;
+  margin-bottom: 80px;
+
+}
+.main_imageholder > img{
+  width: 100%;
 }
 
-
-
 .textholder{
-  /*border: solid green;*/
-  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 h1{
   font-family: "Poppins";
   font-weight: 500;
-  font-size: 36px;
-  margin-top: 2rem;
+  font-size: 28px;
+  line-height: 3rem;
+  margin-bottom: 30px;
 }
 
 p{
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 17px;
-  line-height: 28px;
-  margin-top: 2rem;
+  line-height: 2rem;
+  margin-bottom: 30px;
 }
 
 button{
-  margin-top:2rem;
   font-family: "Poppins";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  width: 170px;
-  height: 40px;
-  color: hsl(257, 40%, 70%);
+  width: 200px;
+  height: 60px;
+  color: hsl(257, 40%, 49%);
   text-decoration: none;
   background-color: white;
   border: 0px;
   border-radius: 50px;
-  box-shadow: 5px 5px 10px hsl(257, 40%, 35%);
 }
 
 button:hover{
@@ -89,10 +97,9 @@ button:hover{
 
 .social{
   /*border: solid orange;*/
-  width: 90%;
-  margin: 0px auto auto auto;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .social ul{
@@ -103,25 +110,66 @@ button:hover{
   list-style: none;
   border: 1px white solid;
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-left: 10px;
   display:flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-
 }
 
 .social > ul > li > a{
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
+@media screen and (min-width: 800px){
+  .wrapper{
+    background: url('images/bg-desktop.svg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
 
-.attribution > a {
-  color: hsl(228, 45%, 44%);
+  .container{
+    width:88%;
+    height: auto;
+    margin: 65px auto 45px;
+  }
+
+  .header {
+    margin-bottom:75px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 60px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .textholder{
+    align-items: flex-start;
+  }
+
+  h1{
+  margin-top: 50px;
+  font-size: 38px;
+  text-align: left;
+  line-height: 3.5rem;
+  }
+
+  p{
+  text-align: left;
+  }
+
+  .social{
+  justify-content: flex-end;
+  }
+
+  .main_imageholder{
+    margin:0px;
+  }
+
 }
