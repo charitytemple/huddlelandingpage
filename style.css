@@ -145,7 +145,7 @@ button:hover{
   main{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 10px;
     width: 100%;
     margin-bottom: 0;
   }
