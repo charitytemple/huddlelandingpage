@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-  margin: 50px;
+  margin: 40px 50px 50px;
   display: flex;
   flex-direction: column;
 }
@@ -62,8 +62,8 @@ main{
 
 h1{
   font-family: "Poppins";
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 700;
+  font-size: 26px;
   line-height: 3rem;
   margin-bottom: 30px;
 }
@@ -126,7 +126,8 @@ button:hover{
 @media screen and (min-width: 800px){
   .wrapper{
     background: url('images/bg-desktop.svg') no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: top left;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -147,6 +148,10 @@ button:hover{
     grid-gap: 60px;
     width: 100%;
     margin-bottom: 0;
+  }
+
+  .main_imageholder > img{
+    width: 95%;
   }
 
   .textholder{
